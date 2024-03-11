@@ -11,6 +11,10 @@
 		445E1ED92B3D8CE8001D5A24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E1ED82B3D8CE8001D5A24 /* ContentView.swift */; };
 		445E1EDB2B3D8CE9001D5A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445E1EDA2B3D8CE9001D5A24 /* Assets.xcassets */; };
 		445E1EDE2B3D8CE9001D5A24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 445E1EDD2B3D8CE9001D5A24 /* Preview Assets.xcassets */; };
+		445E1EE52B3D8DDC001D5A24 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E1EE42B3D8DDC001D5A24 /* PostModel.swift */; };
+		445E1EE92B3D8FA7001D5A24 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E1EE82B3D8FA7001D5A24 /* NetworkManager.swift */; };
+		445E1EEB2B3D90BB001D5A24 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E1EEA2B3D90BB001D5A24 /* PostData.swift */; };
+		445E1EEF2B3D99A0001D5A24 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445E1EEE2B3D99A0001D5A24 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		445E1ED82B3D8CE8001D5A24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		445E1EDA2B3D8CE9001D5A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		445E1EDD2B3D8CE9001D5A24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		445E1EE42B3D8DDC001D5A24 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		445E1EE82B3D8FA7001D5A24 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		445E1EEA2B3D90BB001D5A24 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		445E1EEE2B3D99A0001D5A24 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		445E1ED52B3D8CE8001D5A24 /* TechNews */ = {
 			isa = PBXGroup;
 			children = (
+				445E1EED2B3D993E001D5A24 /* ViewModel */,
+				445E1EE62B3D8F86001D5A24 /* Models */,
 				445E1ED62B3D8CE8001D5A24 /* TechNewsApp.swift */,
-				445E1ED82B3D8CE8001D5A24 /* ContentView.swift */,
+				445E1EEC2B3D992C001D5A24 /* View */,
 				445E1EDA2B3D8CE9001D5A24 /* Assets.xcassets */,
 				445E1EDC2B3D8CE9001D5A24 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				445E1EDD2B3D8CE9001D5A24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		445E1EE62B3D8F86001D5A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				445E1EE82B3D8FA7001D5A24 /* NetworkManager.swift */,
+				445E1EEA2B3D90BB001D5A24 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		445E1EEC2B3D992C001D5A24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				445E1ED82B3D8CE8001D5A24 /* ContentView.swift */,
+				445E1EEE2B3D99A0001D5A24 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		445E1EED2B3D993E001D5A24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				445E1EE42B3D8DDC001D5A24 /* PostModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445E1EEB2B3D90BB001D5A24 /* PostData.swift in Sources */,
+				445E1EEF2B3D99A0001D5A24 /* DetailView.swift in Sources */,
+				445E1EE92B3D8FA7001D5A24 /* NetworkManager.swift in Sources */,
 				445E1ED92B3D8CE8001D5A24 /* ContentView.swift in Sources */,
+				445E1EE52B3D8DDC001D5A24 /* PostModel.swift in Sources */,
 				445E1ED72B3D8CE8001D5A24 /* TechNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +320,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +350,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
